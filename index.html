@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Merchant Form</title>
+</head>
+
+<body>
+    <h1>New Business</h1>
+    <form id="regform" action="">
+        <div id="wrapper">
+            <div class="input" class="input">
+                <label class="tex" for="text">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="input">
+                <label class="tex" for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="input">
+                <label class="tex" for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="Phone" maxlength="10">
+            </div>
+            <div class="input">
+                <label class="tex" for="text">Website</label>
+                <input type="text" name="website" id="website" placeholder="Website">
+            </div>
+            <div class="input">
+                <label class="tex" for="text">Contact Name</label>
+                <input type="text" name="contact_name" id="contact_name" placeholder="Contact Name">
+            </div>
+            <div class="input">
+                <label class="tex" for="text">Contact Phone</label>
+                <input type="text" name="contact_phone" id="contact_phone" placeholder="Contact Phone" maxlength="10">
+            </div>
+            <div class="input">
+                <label class="tex" for="text">Contact Mail</label>
+                <input type="text" name="contact_email" id="contact_email" placeholder="Contact Email">
+            </div>
+            <div class="input">
+                <label class="tex" for="text">Notes</label>
+                <textarea name="notes" id="notes" placeholder="Notes"></textarea>
+            </div>
+
+            <div class="radio">
+                <label class="tex" for="radio">Type Of Business</label>
+                <div>
+                    <input type="radio" name="type" id="type" value="Small Business">Small Business
+                </div>
+                <div>
+                    <input type="radio" name="type" id="type" value="Enterprise">Enterprise
+
+                </div>
+                <div>
+                    <input type="radio" name="type" id="type" value="Entrepreneur">Entrepreneur
+                </div>
+            </div>
+            <div class="select">
+                <label class="tex" for="select">category</label>
+                <select name="category" id="category" multiple>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Toys">Toys</option>
+                    <option value="Groceries">Groceries</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Digital">Digital</option>
+                </select>
+            </div>
+            <div class="input">
+                <label class="tex" for="commission_percentage">Commission Percentage</label>
+                <input type="number" name="commission_percentage" id="commission_percentage"
+                    placeholder="Commission Percentage">
+            </div>
+            <div class="input">
+                <label class="tex" for="">Active From Date</label>
+                <input type="date" name="active_from_date" id="active_from_date">
+            </div>
+            <div class="input">
+                <label class="tex" for="">Logo</label>
+                <input type="file" name="logo" id="logo">
+            </div>
+
+            <div class="checkbox">
+                <label class="tex" for="checkbox">Payment Option </label>
+                <div>
+                    <input type="checkbox" name="paymentOptions" value="Card Payment">
+                    <label for="cardPayment">Card Payment</label><br>
+                    <input type="checkbox" name="paymentOptions" value="UPI">
+                    <label for="UPI">UPI</label><br>
+                    <input type="checkbox" name="paymentOptions" value="Cash on Delivery">
+                    <label for="cashOnDelivery">Cash on Delivery</label><br>
+
+
+                    <input type="checkbox" name="criticalaccount" id="criticalaccount">Critical Account <br>
+                    <em>(To represent whether the account is critical
+                        so that we can provide extra care in case of
+                        any queries
+                        )</em>
+
+                </div>
+                <div id="btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <table id="result">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Website</th>
+                <th>Contact Name</th>
+                <th>Contact Phone</th>
+                <th>Contact Email</th>
+                <th>Notes</th>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Comission Percentage</th>
+                <th>Active From Date</th>
+                <th>Logo</th>
+                <th>Critical Account</th>
+                <th>Payment Options</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <script src="/script.js">
+
+    </script>
+
+</body>
+
+</html>
